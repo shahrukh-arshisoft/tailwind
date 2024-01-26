@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "CynthoNext";
+  src: url("~@/assets/font-family/CynthoNextMedium.otf") format("otf");
+}
+
+.heading {
+  font-family: Cyntho Next;
+  font-size: 50px;
+  font-weight: 700;
+}
+.subheading {
+  font-family: Cyntho Next;
+  font-size: 24px;
+  font-weight: 600;
+}
+.input1 {
+  border-radius: 12px;
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+  font-family: Cyntho Next;
+  font-size: 20px;
+  font-weight: 400 !important;
+  color: #000000 !important;
+  padding-left: 1.5rem;
+  width: 100%;
+  max-width: 502px !important;
+  height: 70px;
+}
+.input1::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000 !important;
+}
+.text3 {
+  font-family: Cyntho Next;
+  font-size: 16px;
+  font-weight: 600;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+
+  appearance: none;
+  outline: 0;
+  background: lightgray;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+  color: white;
+}
+.btn {
+  background-color: #1f92d0;
+  color: #ffffff !important;
+  border-radius: 12px;
+  font-family: Cyntho Next !important;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 502px;
+  height: 73px;
+}
+form {
+  width: 100%;
+  max-width: 502px;
+}
+.forgottext {
+  font-family: Cyntho Next;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f92d0;
+}
+hr {
+  width: 100%;
+  max-width: 204px;
+  border: 1px solid #000000;
+}
+.or {
+  font-family: cyntho Next;
+  font-size: 24px;
+  font-weight: 600;
+}
+.signintext {
+  font-family: Cyntho Next;
+  font-size: 20px;
+  font-weight: 400;
+}
+.lastline {
+  width: 100% !important  ;
+  max-width: 463px !important;
+  color: #000000 !important;
+}
+.ali {
+  text-indent: 10px;
+  color: #1f92d0;
+}
+
+/* Floating Label Styles */
+.floating-group {
+  position: relative;
+}
+
+.floating-label {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  transition: 0.2s ease all;
+  pointer-events: none;
+  color: #000000; /* You can customize the label color */
+  font-family: Cyntho Next;
+}
+
+/* Adjust the label position when the input is focused or has content */
+.input1:focus + .floating-label,
+.input1:not(:placeholder-shown) + .floating-label {
+  top: 15px;
+  font-size: 12px; /* Optionally reduce font size when label is floating */
+  color: #000; /* Optionally change text color when label is floating */
+  font-family: Cyntho Next;
+}
+.bgclr {
+  background-color: #f3f3f3;
+}
