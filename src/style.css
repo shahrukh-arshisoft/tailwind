@@ -18,17 +18,17 @@
 }
 .input1 {
   border-radius: 12px;
-  background-color: #d9d9d9;
+  background-color: #f3f3f3;
   border: none;
   outline: none;
   font-family: Cyntho Next;
   font-size: 20px;
   font-weight: 400 !important;
   color: #000000 !important;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   width: 100%;
   max-width: 502px !important;
-  height: 70px;
+  padding: 20px 0px 20px 1.5rem;
 }
 .input1::placeholder {
   font-size: 20px;
@@ -40,17 +40,14 @@
   font-size: 16px;
   font-weight: 600;
 }
-input[type="checkbox"] {
-  cursor: pointer;
-
-  appearance: none;
-  outline: 0;
-  background: lightgray;
-  height: 16px;
-  width: 16px;
-  border: 1px solid white;
-  color: white;
+.h1 {
+  width: 100% !important;
+  max-width: 397px !important;
+  height: 60px !important;
+  font-family: Cyntho Next !important;
+  font-weight: 700px !important;
 }
+
 .btn {
   background-color: #1f92d0;
   color: #ffffff !important;
@@ -60,7 +57,27 @@ input[type="checkbox"] {
   font-weight: 600;
   width: 100%;
   max-width: 502px;
-  height: 73px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@keyframes colorChange {
+  0% {
+    background-color: #1f92d0;
+  }
+  33% {
+    background-color: #1d76be;
+  }
+  66% {
+    background-color: #1067ae;
+  }
+  100% {
+    background-color: #1f92d0;
+  }
+}
+
+/* Hover styles with animation */
+.btn:hover {
+  animation: colorChange 3s infinite;
 }
 form {
   width: 100%;
@@ -81,6 +98,8 @@ hr {
   font-family: cyntho Next;
   font-size: 24px;
   font-weight: 600;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .signintext {
   font-family: Cyntho Next;
@@ -123,4 +142,56 @@ hr {
 }
 .bgclr {
   background-color: #f3f3f3;
+}
+@media screen and (max-width: 992px) {
+  form {
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 1157px) {
+  .forgottext {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1157px) {
+  .signintext {
+    font-size: smaller;
+    word-break: keep-all;
+  }
+}
+@media screen and (max-width: 900px) {
+  .input1,
+  .btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hello {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hello {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .input1:focus + .floating-label,
+  .input1:not(:placeholder-shown) + .floating-label {
+    font-size: xx-small;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .subheading {
+    font-size: 15px;
+  }
 }
