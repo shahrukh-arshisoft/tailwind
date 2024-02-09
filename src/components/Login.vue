@@ -43,7 +43,7 @@
             </span>
           </div>
         </div>
-        <div><Button /></div>
+        <div><Button text="Sign In" /></div>
         <div class="flex items-center justify-evenly mb-4">
           <hr />
           <span class="or">OR</span>

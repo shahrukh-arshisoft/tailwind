@@ -27,7 +27,7 @@
   color: #000000 !important;
   padding-left: 1rem;
   width: 100%;
-  max-width: 502px !important;
+
   padding: 20px 0px 20px 1.5rem;
 }
 .input1::placeholder {
@@ -40,12 +40,14 @@
   font-size: 16px;
   font-weight: 600;
 }
-.h1 {
-  width: 100% !important;
-  max-width: 397px !important;
-  height: 60px !important;
-  font-family: Cyntho Next !important;
-  font-weight: 700px !important;
+.sum {
+  width: 100%;
+  max-width: 502px;
+  height: 60px;
+  font-family: Cyntho Next;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .btn {
@@ -77,7 +79,7 @@
 
 /* Hover styles with animation */
 .btn:hover {
-  animation: colorChange 3s infinite;
+  animation: colorChange 1s infinite;
 }
 form {
   width: 100%;
@@ -195,3 +197,37 @@ hr {
     font-size: 15px;
   }
 }
+.borderbtm {
+  width: 100%;
+  max-width: 502px;
+  border-bottom: 1px solid #000000;
+}
+.lasttext {
+  font-family: Cyntho Next;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1f92d0;
+}
+.khaliq {
+  font-size: clamp(24px, 3%, 50px);
+}
+/* 
+@media screen and (max-width: 600px) {
+  .arshisoft,
+  .sum,
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lasttext {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sum {
+    margin-bottom: 15px;
+  }
+} */

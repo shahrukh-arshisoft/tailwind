@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Login from '../components/Login.vue';
 import Forgotpswrd from "../components/Forgotpswrd.vue";
+import Entercode from "../components/Entercode.vue";
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -16,7 +18,11 @@ const router = createRouter({
         name: 'con',
         component: Forgotpswrd
     },
-
+    {
+        path: '/Entercode',
+        name: 'shahrukh',
+        component: Entercode
+    }
 
 ]
 });

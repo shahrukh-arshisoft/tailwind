@@ -1,4 +1,5 @@
 <template>
+  <!-- :class="isError ? 'error-background' : ''" -->
   <div class="floating-group mb-4">
     <input
       class="input1"
@@ -6,6 +7,8 @@
       :id="id"
       :name="name"
       :placeholder="placeholder"
+      :style="isError ? { 'background-color': '#F4A4A4' } : {}"
+      :value="value"
     />
     <label :for="label" class="floating-label">{{ label }}</label>
   </div>
@@ -37,6 +40,18 @@ const props = defineProps({
     default: "",
   },
   name: {
+    type: String,
+    default: "",
+  },
+  backgroundColor: {
+    type: String,
+    default: "",
+  },
+  isError: {
+    type: Boolean,
+    default: false,
+  },
+  value: {
     type: String,
     default: "",
   },
